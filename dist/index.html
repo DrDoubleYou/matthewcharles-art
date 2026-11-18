@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e9ddc3">
+  <meta name="description" content="Matthew Charles — an artist's studio. A new collection is taking shape.">
+  <title>Matthew Charles · Art</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="paper" aria-hidden="true"></div>
+  <div class="wash wash-one" aria-hidden="true"></div>
+  <div class="wash wash-two" aria-hidden="true"></div>
+  <header><span class="monogram" aria-label="Matthew Charles">mc.</span><span class="studio-label">THE ARTIST'S STUDIO</span></header>
+  <main>
+    <p class="eyebrow">WORKS IN WATERCOLOR & BEYOND</p>
+    <h1><span>Matthew</span><span>Charles</span></h1>
+    <div class="brush-rule" aria-hidden="true"></div>
+    <p class="coming">A new collection is taking shape.</p>
+    <p class="note">Original artwork. Coming soon.</p>
+  </main>
+  <footer><span>MATTHEWCHARLES.ART</span><span>© <span id="year">2026</span> MATTHEW CHARLES</span></footer>
+  <svg class="filters" aria-hidden="true"><defs><filter id="pigment"><feTurbulence type="fractalNoise" baseFrequency=".018 .1" numOctaves="3" seed="8" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1.6" xChannelSelector="R" yChannelSelector="G"/></filter></defs></svg>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
