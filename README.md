@@ -1,11 +1,15 @@
 # Matthew Charles
 
-A quiet, single-screen artist landing page for MatthewCharles.art. Artwork and Stripe checkout will be added later.
+A single-screen art landing page at https://matthewcharles.art.
 
-The static website is in `dist/`. Open `dist/index.html`, or serve that directory with any static HTTP server. No build or dependencies are required.
+The homepage contains only a one-line Matthew Charles brush-lettered title, a thin hand-drawn black marker rule, and the inactive Home, Sisters, and Contact labels. It uses neutral white paper grain and has no scrolling, checkout, header, or footer.
 
-Hosting identity is in `.openai/hosting.json`. Publish the `dist` directory through Sites. The public GitHub repository is the source mirror.
+## Lettering review
 
-The three transparent lettering images were painted through stencils using the installed Rebelle 8 Motion IO watercolor renderer, with native brush strokes, fluid simulation, contrasting outlines and dots. Font shapes use Snell Roundhand Black, Baskerville Bold Italic and SignPainter as the starting stencils. No font files or vendor brush/paper resources are included.
+`/studies/` contains 30 numbered comparisons. Each card previews the homepage with `/?style=1` through `/?style=30`. The default is option 06, a dry-black treatment of the supplied Gathenia reference. The review gallery is separate from the homepage and is not linked from it.
 
-Preview a treatment using `?style=tidal-bloom`, `?style=sunset-poetry`, or `?style=wild-iris`. The default is Tidal Bloom. All treatments use the same no-scroll page and contain no checkout or products.
+Six lettering families each have five native Rebelle Motion IO treatments: dry black, wet black, a single-color wash, a pale wash with a darker rim of the same hue, and an open black outline. The first two families use the supplied Slicey Heallow (Dhabee Studio) and Gathenia (Rantautype Studio) raster lettering references. The other four are SignPainter, Brush Script, Marker Felt, and Noteworthy, rendered from fonts installed on the owner's Mac. No font software or proprietary Rebelle brush or paper resources are included. The final pigment images and marker rule were exported from Rebelle; the neutral paper grain was generated for this page.
+
+## Hosting
+
+Static files are in `dist/`, with no build step or runtime dependencies. Hosting configuration is in `.openai/hosting.json`. The source is mirrored to the public GitHub repository. Home, Sisters, and Contact are plain labels and do not navigate.

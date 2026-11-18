@@ -1,8 +1,5 @@
-document.getElementById('year').textContent = new Date().getFullYear();
-const styles = ['tidal-bloom', 'sunset-poetry', 'wild-iris'];
-const requestedStyle = new URLSearchParams(location.search).get('style');
-if (styles.includes(requestedStyle)) {
-  document.querySelectorAll('.lettering').forEach(image => {
-    image.src = 'assets/' + requestedStyle + '.png';
-  });
+// Numbered previews change only the lettering; the homepage has no controls.
+const requested = new URLSearchParams(location.search).get('style');
+if (/^(?:[1-9]|[12]\d|30)$/.test(requested || '')) {
+  document.getElementById('lettering').src = `assets/lettering-${requested.padStart(2, '0')}.png`;
 }
