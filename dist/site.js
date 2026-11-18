@@ -1,0 +1,6 @@
+document.getElementById('year').textContent = new Date().getFullYear();
+const styles = ['tidal-bloom', 'sunset-poetry', 'wild-iris'];
+const requestedStyle = new URLSearchParams(location.search).get('style');
+if (styles.includes(requestedStyle)) {
+  document.getElementById('lettering').src = 'assets/' + requestedStyle + '.png';
+}
